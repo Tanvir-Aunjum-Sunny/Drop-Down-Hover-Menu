@@ -1,0 +1,199 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Your template name 
+    Template URI: http://nerdlab.com
+    Description: This is html5 template
+    Author: NerdLab
+    Author URI: http://nerdlab.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Theme Default CSS (body, link color, section etc)
+    2. Main Menu Area Css
+    3. Main Content
+	
+
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+
+html, body {height: 100%;}
+.floatleft {float:left}
+.floatright {float:right}
+.alignleft {float:left;margin-right:15px;margin-bottom: 15px}
+.alignright {float:right;margin-left:15px;margin-bottom: 15px}
+.aligncenter {display:block;margin:0 auto 15px}
+a:focus {outline:0px solid}
+img {max-width:100%;height:auto}
+.fix {overflow:hidden}
+p {margin:0 0 15px;}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+}
+a {transition: all 0.3s ease 0s;text-decoration:none;}
+a:hover {
+  color: #ec4445;
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+ul{
+list-style: outside none none;
+margin: 0;
+padding: 0
+}
+
+.clear{clear:both}
+
+body {}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+.browserupgrade {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+
+/*----------------------------------------*/
+/*  2. Main Menu Area Css
+/*----------------------------------------*/
+
+.main-menu-area{
+  background: #FAFAFA;
+}
+
+.logo{
+  padding: 20px 0;
+}
+
+.main-menu ul li{
+  display: inline-block;
+  position: relative;
+}
+
+.main-menu ul li a{
+  color: #222;
+  text-transform: capitalize;
+  font-size: 14px;
+  padding: 37px 15px;
+  display: block;
+}
+
+.main-menu ul li:hover a{
+  background: #F0F0F0;
+}
+
+.main-menu ul li ul{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  padding-top: 2px;
+
+  transition: all .3s ease-out 0s;
+  transform-origin: center top 0;
+
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -o-transform: scaleY(0);
+  transform: scaleY(0);
+}
+
+.main-menu ul li:hover ul{
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.main-menu ul li ul li{
+  display: block;
+}
+
+.main-menu ul li ul li a{
+  padding: 10px 15px;
+}
+
+.main-menu ul li:hover ul li a{
+  background: #F0F0F0;
+}
+
+.main-menu ul li:hover ul{
+  padding-top: 0;
+  border-top: 2px solid #981283;
+}
+
+.main-menu ul li:hover ul li a:hover{
+  background: #E6E6E6;
+}
+
+.main-menu li.cart{
+  text-align: center;
+  width: 60px
+}
+
+.main-menu li.cart:hover a{
+  background: #981283;
+  color: #fff;
+}
+
+.main-menu ul li ul li span{
+  float: right;
+  clear: both;
+}
+
+/*Sub-menu*/
+
+.main-menu ul li:hover ul li {
+  position: relative;
+}
+
+.main-menu ul li:hover ul li ul{
+  position: absolute;
+  top: 0;
+  left: 200px;
+  border: none;
+
+  transition: all .1s ease 0s;
+  transform-origin: center top 0;
+
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -o-transform: scaleY(0);
+  transform: scaleY(0);
+}
+
+.main-menu ul li:hover ul li:hover ul{
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.main-menu ul li:hover ul li:hover a{
+  background: #E6E6E6;
+}
+
+.main-menu ul li:hover ul li:hover ul li a{
+  background: #fafafa;
+}
+
+.main-menu ul li:hover ul li:hover ul li a:hover{
+  background: #E6E6E6;
+}
